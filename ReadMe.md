@@ -40,10 +40,14 @@ have the proper run configurations. In order to set these configurations followi
 ## Screen shots of the Application
 
 Homepage:
+<img width="444" alt="Course Review Homepage" src="https://github.com/puschb/Course-Review-App/assets/94179760/ac747585-e2a8-49f3-adab-faf4271e3780">
 
 Login page:
+<img width="448" alt="Course Review Login page" src="https://github.com/puschb/Course-Review-App/assets/94179760/09586722-52b4-4684-89b1-a618d708783f">
+<img width="446" alt="Course Review Login page 2" src="https://github.com/puschb/Course-Review-App/assets/94179760/b200f854-a8bf-4996-b63b-56700227597b">
 
 Seeing Reviews Page:
+<img width="447" alt="Seeing reviews page" src="https://github.com/puschb/Course-Review-App/assets/94179760/9821d80f-f475-47f2-9ac0-119abf817187">
 
 
 
