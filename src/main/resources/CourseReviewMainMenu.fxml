@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #0D265D;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.virginia.cs.hw7.GUI.CourseReviewMainMenuController">
+    <left>
+        <AnchorPane prefHeight="400.0" prefWidth="270.0" style="-fx-background-color: #0D265D;" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="134.0" fitWidth="315.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@img/uvalogo.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+    </left>
+   <right>
+        <AnchorPane prefHeight="400.0" prefWidth="320.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="seeReviews" layoutX="153.0" layoutY="161.0" mnemonicParsing="false" onAction="#seeReviews" style="-fx-background-color: #FFFFFF;" text="See Reviews" />
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="3.0" layoutY="87.0" prefHeight="34.0" prefWidth="275.0" text="Course Review" textAlignment="CENTER" textFill="#fb7719">
+                    <font>
+                        <Font name="Bodoni 72 Oldstyle Book" size="23.0" />
+                    </font>
+                </Label>
+                <Button fx:id="submitReview" layoutX="48.0" layoutY="161.0" mnemonicParsing="false" onAction="#submitReview" style="-fx-background-color: #FFFFFF;" text="Submit Review" />
+            <Button fx:id="logOut" layoutX="111.0" layoutY="253.0" mnemonicParsing="false" onAction="#logOut" style="-fx-background-color: #FFFFFF;" text="Log Out" />
+            <TextField fx:id="courseInput" alignment="CENTER" layoutX="66.0" layoutY="200.0" promptText="Course Name" />
+            <Label fx:id="wrongInput" alignment="CENTER" layoutX="19.0" layoutY="290.0" prefHeight="17.0" prefWidth="254.0" textFill="RED" />
+            </children>
+        </AnchorPane>
+   </right>
+</BorderPane>

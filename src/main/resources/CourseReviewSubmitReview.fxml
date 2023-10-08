@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #0D265D;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.virginia.cs.hw7.GUI.CourseReviewSubmitReviewController">
+    <left>
+        <AnchorPane prefHeight="400.0" prefWidth="270.0" style="-fx-background-color: #0D265D;" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="134.0" fitWidth="315.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@img/uvalogo.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+    </left>
+    <right>
+        <AnchorPane prefHeight="400.0" prefWidth="320.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="submit" alignment="CENTER" contentDisplay="CENTER" layoutX="79.0" layoutY="334.0" mnemonicParsing="false" onAction="#submit" style="-fx-background-color: #FFFFFF;" text="Submit" textAlignment="CENTER" />
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="52.0" layoutY="43.0" prefHeight="34.0" prefWidth="199.0" text="Course Review" textAlignment="CENTER" textFill="#fb7719">
+                    <font>
+                        <Font name="Bodoni 72 Oldstyle Book" size="23.0" />
+                    </font>
+                </Label>
+                <Button fx:id="exit" alignment="CENTER" contentDisplay="CENTER" layoutX="157.0" layoutY="334.0" mnemonicParsing="false" onAction="#exit" prefHeight="26.0" prefWidth="52.0" style="-fx-background-color: #FFFFFF;" text="Exit" textAlignment="CENTER" />
+            <TextArea fx:id="submissionField" layoutX="54.0" layoutY="82.0" prefHeight="167.0" prefWidth="200.0" promptText="Enter Review Message" wrapText="true" />
+            <Label layoutX="79.0" layoutY="286.0" prefHeight="26.0" prefWidth="79.0" text="Rating:" textFill="WHITE">
+               <font>
+                  <Font name="Bodoni 72 Oldstyle Book" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="rating" layoutX="158.0" layoutY="286.0" prefHeight="26.0" prefWidth="50.0" />
+            <Label fx:id="ratingError" layoutX="8.0" layoutY="285.0" prefHeight="30.0" prefWidth="70.0" textFill="RED" />
+            <Label fx:id="reviewError" layoutX="89.0" layoutY="257.0" prefHeight="17.0" prefWidth="149.0" textAlignment="CENTER" textFill="RED" />
+            </children>
+        </AnchorPane>
+    </right>
+</BorderPane>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #0D265D;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.virginia.cs.hw7.GUI.CourseReviewStartController">
+    <left>
+        <AnchorPane prefHeight="400.0" prefWidth="270.0" style="-fx-background-color: #0D265D;" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="134.0" fitWidth="315.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@img/uvalogo.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+    </left>
+   <right>
+        <AnchorPane prefHeight="400.0" prefWidth="320.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="LoginButtonStart" alignment="CENTER" layoutX="170.0" layoutY="161.0" mnemonicParsing="false" onAction="#switchToLogin" style="-fx-background-color: #FFFFFF;" text="Returning User" />
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="8.0" layoutY="87.0" prefHeight="34.0" prefWidth="265.0" text="Course Review" textAlignment="JUSTIFY" textFill="#fb7719">
+                    <font>
+                        <Font size="23.0" />
+                    </font>
+                </Label>
+            <Button fx:id="NewLoginButtonStart" alignment="CENTER" layoutX="43.0" layoutY="161.0" mnemonicParsing="false" onAction="#switchToNewLogin" style="-fx-background-color: #FFFFFF;" text="New User" />
+            <Button fx:id="exit" alignment="CENTER" layoutX="116.0" layoutY="200.0" mnemonicParsing="false" onAction="#exit" prefHeight="26.0" prefWidth="54.0" style="-fx-background-color: #FFFFFF;" text="Exit" />
+            </children>
+        </AnchorPane>
+   </right>
+</BorderPane>

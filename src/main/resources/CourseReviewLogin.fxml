@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #0D265D;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.virginia.cs.hw7.GUI.CourseReviewLoginController">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="270.0" style="-fx-background-color: #0D265D;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="134.0" fitWidth="315.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/uvalogo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="320.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER_RIGHT" layoutX="8.0" layoutY="141.0" prefHeight="27.0" prefWidth="93.0" text="Username" textFill="#fffdfd">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Label>
+            <Label alignment="CENTER_RIGHT" layoutX="8.0" layoutY="201.0" prefHeight="17.0" prefWidth="92.0" text="Password" textFill="#fffdfd">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Label>
+            <TextField fx:id="username" layoutX="109.0" layoutY="142.0" promptText="Username" />
+            <Button fx:id="login" layoutX="84.0" layoutY="254.0" mnemonicParsing="false" onAction="#userLogIn" style="-fx-background-color: #FFFFFF;" text="Log In" />
+            <PasswordField fx:id="password" layoutX="109.0" layoutY="197.0" promptText="Password" />
+            <Label alignment="CENTER" layoutX="16.0" layoutY="87.0" prefHeight="34.0" prefWidth="247.0" text="Course Review" textFill="#fb7719">
+               <font>
+                  <Font name="Bodoni 72 Oldstyle Book" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="wrongLogin" layoutX="69.0" layoutY="290.0" prefHeight="30.0" prefWidth="148.0" textFill="RED">
+               <font>
+                  <Font size="10.0" />
+               </font></Label>
+            <Button fx:id="exit" layoutX="158.0" layoutY="254.0" mnemonicParsing="false" onAction="#exit" prefHeight="26.0" prefWidth="52.0" style="-fx-background-color: #FFFFFF;" text="Exit" />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

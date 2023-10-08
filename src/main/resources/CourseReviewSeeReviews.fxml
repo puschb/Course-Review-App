@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #0D265D;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.virginia.cs.hw7.GUI.CourseReviewSeeReviewsController">
+    <left>
+        <AnchorPane prefHeight="400.0" prefWidth="270.0" style="-fx-background-color: #0D265D;" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="134.0" fitWidth="315.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@img/uvalogo.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+    </left>
+    <right>
+        <AnchorPane prefHeight="400.0" prefWidth="320.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="16.0" layoutY="87.0" prefHeight="34.0" prefWidth="257.0" text="Course Review" textAlignment="CENTER" textFill="#fb7719">
+                    <font>
+                        <Font name="Bodoni 72 Oldstyle Book" size="23.0" />
+                    </font>
+                </Label>
+            <TableView fx:id="reviewTable" layoutX="12.0" layoutY="125.0" prefHeight="225.0" prefWidth="266.0">
+              <columns>
+                <TableColumn fx:id="ratingColumn" prefWidth="56.0" text="Rating" />
+                <TableColumn fx:id="commentColumn" prefWidth="209.0" text="Review" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+            <Label fx:id="averageRatingLabel" alignment="CENTER" layoutX="91.0" layoutY="368.0" prefHeight="17.0" prefWidth="180.0" text="Average Rating: " textFill="WHITE" />
+            <Button fx:id="exitButton" alignment="CENTER" contentDisplay="CENTER" layoutX="26.0" layoutY="364.0" mnemonicParsing="false" onAction="#exit" prefHeight="25.0" prefWidth="65.0" text="Exit" textAlignment="CENTER" />
+            </children>
+        </AnchorPane>
+    </right>
+   <center>
+      <Label text="Label" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
